@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>TOP page</title>
+</head>
+<body>
+{{if .}}
+Hello! {{.}}.
+{{else}}
+Who are you？
+<form action="/" method="get">
+<input type="text" name="yourname" value="" title="Please, input your name" />
+<input type="submit" value="Submit" />
+</form>
+{{end}}
+</body>
+</html>
